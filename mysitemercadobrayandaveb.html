@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olivarez College</title>
+  <style>
+    /* Reset and body styling */
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #4CAF50, #1D8348);
+      color: white;
+      height: 100vh;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    /* Header styling */
+    header h1 {
+      font-size: 3em;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    .underline {
+      width: 120px;
+      height: 4px;
+      background: white;
+      margin: 20px auto;
+      border-radius: 2px;
+    }
+
+    /* Image styling */
+    .image-container img {
+      max-width: 250px;
+      border-radius: 50%;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      margin: 20px 0;
+    }
+
+    /* Button styling */
+    .cta-button {
+      display: inline-block;
+      background: white;
+      color: #4CAF50;
+      font-size: 1.2em;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background: #333;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    /* History Section Styling */
+    #history {
+      display: none;
+      background: rgba(255, 255, 255, 0.95);
+      color: #333;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 800px;
+      overflow-y: auto;
+      max-height: 70vh;
+      text-align: left;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    #history h2 {
+      margin-top: 0;
+    }
+
+    /* Close button styling */
+    .close-button {
+      background: #4CAF50;
+      color: white;
+      font-size: 1em;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      float: right;
+    }
+
+    .close-button:hover {
+      background: #333;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.9em;
+      text-align: center;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Olivarez College</h1>
+    <p>Empowering Dreams Through Quality Education</p>
+    <div class="underline"></div>
+  </header>
+
+  <!-- Image Section -->
+  <div class="image-container">
+    <img src="paranaque.jpeg" alt="Olivarez College Logo">
+  </div>
+
+  <!-- Call to Action Button -->
+  <button class="cta-button" onclick="toggleHistory()">Learn More</button>
+
+  <!-- History Section -->
+  <!-- History Section -->
+<div id="history">
+  <button class="close-button" onclick="toggleHistory()">Close</button>
+  <h2>History of Olivarez College</h2>
+  <p>1975 - Dr. Pablo R. Olivarez (DPRO) and his late wife Dr. Rosario pioneer in the development of the San Dionisio community when they put up Olivarez General Hospital along then Sucat Highway.</p>
+  <p>30 April 1976 - Olivarez couple opens the gates of Olivarez School of Nursing (OSN) for its first 84 enrollees to address the growing demand for competent nurses in the country and abroad at that time.</p>
+  <p>1977 - Liberal arts and vocational courses were added due to dramatic increase in student enrollment. Eventually, OSN renames into Olivarez Junior College, with Mrs. Petronila Ignacio as the first academic vice president.</p>
+  <p>1978 - College of Commerce and of Liberal Arts and Sciences were instituted, along with additional paramedic courses. Kindergarten and grade one classes were also offered to kickstart the Elementary Department. DPRO buys the two-hectare lot adjacent to Olivarez General Hospital.</p>
+  <p>1979 - The school began accepting first and second year high school students. It was also in the same year the Olivarez started to offer complete elementary courses from Grades 1 to 6. The Academic Council was organized and was composed of the Executive Vice-President, Dean of the College Department and the department heads. This became the present site of the two-storey high school building which was completed in 1979.</p>
+  <p>1980 - The school changed its name to Olivarez College. The construction of the four-storey building (now PRO Hall) was completed.</p>
+  <p>1981 - Third and fourth year high school students were admitted.</p>
+  <p>October 1990 - OC invites the academic accreditation pioneer Philippine Association for Colleges and Universities on Accreditation (PACUCOA) to orient its administrators on the accreditation process.</p>
+  <p>February 1991 - A PACUCOA team arrives for consultation meeting with administrators, faculty, and staff.</p>
+  <p>1992 - Colleges of Commerce and of Liberal Arts receive their Level I accreditation status from PACUCOA in July. College of Nursing gets the same accreditation status two months after. The school also offers graduate programs Master of Arts in Education major in Educational Management and in Guidance and Counseling and Master of Business Administration.</p>
+  <p>28 May 1993 - PACUCOA grants the College of Commerce and of Liberal Arts their Level II accreditation status.</p>
+  <p>1995 - The school year opens under a new administration. Two of DPRO’s children, Eric and Evangeline, assume the positions of Vice President for Academics and Services and Vice President for Finance and Administration, respectively. In June, the four-storey structure especially intended for the Basic Education Department is formally completed.</p>
+  <p>7 February 1997 - College of Nursing earns Level II Accredited status.</p>
+  <p>December 1998 - Level II First Reaccredited status was granted to the College of Liberal Arts and Commerce.</p>
+  <p>2001 - PACUCOA grants Nursing its Level II First Reaccredited status.</p>
+  <p>February 2002 - Grade School and High School Departments, collectively called then Basic Education Department (BED), were awarded Level I accredited status by the Philippine Accrediting Association of Colleges and Universities (PAASCU).</p>
+  <p>2003 - Board of Trustees approves the establishment of a new campus in Tagaytay City, thus, the birth of Olivarez College – Tagaytay (OCT). DPRO envisions OCT as the key to the advancement of the educational, cultural, moral, economic and social well-being of the community in Tagaytay City.</p>
+  <p>14 May 2004 - PAASCU awards BED its Level II Accredited status.</p>
+  <p>2008 - On May 5, PAASCU granted BED the Level II Reaccredited status valid for five years. The new building which houses the College of Business, College of Arts and Sciences, and the main library, apart from the three (3) other libraries has been completed.</p>
+  <p>2026 - Olivarez will celebrate its 50th founding anniversary.</p>
+</div>
+    <!-- Add the rest of the history content here -->
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>Dr. Arcadio Santos Avenue, San Dionisio, Parañaque, Metro Manila, Philippines</p>
+    <p>Phone: +632.8260750 | Email: <a href="mailto:contactus@olivarezcollege.edu.ph">contactus@olivarezcollege.edu.ph</a></p>
+  </footer>
+
+  <script>
+    // Function to toggle the history section
+    function toggleHistory() {
+      const history = document.getElementById('history');
+      history.style.display = history.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>
